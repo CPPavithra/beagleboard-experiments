@@ -12,7 +12,7 @@ Since full board emulation is not available for `beagleconnect_freedom` in QEMU,
 1.  **Build Validation:** Compiled for the **Real Board** target to verify the toolchain and HAL integration.
 2.  **Logic Validation:** Executed the application kernel on **Cortex-M3 QEMU** to verify runtime logic.
 
-### 🛠️ Configuration Steps
+### Configuration Steps
 1.  **Workspace Adaptation:** Leveraged Zephyr v4.2.0 environment.
 2.  **Dependency Resolution:** Modified the `west` manifest to explicitly pull the **Texas Instruments HAL (`hal_ti`)**.
     * *Challenge:* The default manifest excludes TI drivers to save space, causing build failures.
